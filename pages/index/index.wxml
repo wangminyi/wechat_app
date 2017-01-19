@@ -1,5 +1,8 @@
 <!--index.wxml-->
-<view class="container">
+<view class="loading" wx-if="{{condition.loading}}">
+  加载中...
+</view>
+<view class="container" style="background-color: {{bgc}}">
   <view bindtap="bindViewTap" class="userinfo">
     <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
     <text class="userinfo-nickname">{{userInfo.nickName}}</text>

@@ -10,6 +10,6 @@ Page({
       logs: (wx.getStorageSync('logs') || []).map(function (log) {
         return util.formatTime(new Date(log))
       })
-    })
+    });
   }
 })

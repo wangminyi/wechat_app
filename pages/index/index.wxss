@@ -1,4 +1,12 @@
 /**index.wxss**/
+.loading {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  text-align: center;
+  padding-top: 20px;
+}
+
 .userinfo {
   display: flex;
   flex-direction: column;

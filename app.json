@@ -1,7 +1,8 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/user_info/user_info"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -10,22 +11,22 @@
     "navigationBarTextStyle": "white",
     "enablePullDownRefresh": true
   },
-  "tabBar":{
-    "color": "#17B1F7",
-    "selectedColor": "#000000",
-    "backgroundColor": "#00FF00",
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#17B1F7",
+    "backgroundColor": "#FFFFFF",
     "borderStyle": "white",
     "list": [{
       "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "images/chat-blue.png",
+      "selectedIconPath": "images/chat-blue.png"
+    },{
+      "pagePath": "pages/logs/logs",
       "text": "日志",
       "iconPath": "images/chat-blue.png",
       "selectedIconPath": "images/chat-blue.png"
-    },
-    {
-      "pagePath": "pages/logs/logs",
-      "text": "日志2",
-      "iconPath": "images/chat-blue.png",
-      "selectedIconPath": "images/chat-blue.png"
-    }]
+    }
+    ]
   }
 }
