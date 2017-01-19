@@ -1,0 +1,23 @@
+<!--index.wxml-->
+<view class="container">
+  <view bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+  <picker-view style="width: 80%; height: 150px;" value="{{value}}">
+    <picker-view-column style="text-align:center">
+      <view wx:for="{{years}}" wx:key="year" style="line-height: 50px">{{item}}年</view>
+    </picker-view-column>
+    <picker-view-column style="text-align:center">
+      <view wx:for="{{months}}" wx:key="month" style="line-height: 50px">{{item}}月</view>
+    </picker-view-column>
+    <picker-view-column style="text-align:center">
+      <view wx:for="{{days}}" wx:key="day" style="line-height: 50px">{{item}}日</view>
+    </picker-view-column>
+  </picker-view>
+
+  <text class="section__title" style="margin-top: 50px;">设置step</text>
+  <view class="body-view">
+    <slider step="1" value="5" color="#FF0000" selected-color="#0000FF" />
+  </view>
+</view>

@@ -1,0 +1,31 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#17B1F7",
+    "navigationBarTitleText": "100offer",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true
+  },
+  "tabBar":{
+    "color": "#17B1F7",
+    "selectedColor": "#000000",
+    "backgroundColor": "#00FF00",
+    "borderStyle": "white",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "日志",
+      "iconPath": "images/chat-blue.png",
+      "selectedIconPath": "images/chat-blue.png"
+    },
+    {
+      "pagePath": "pages/logs/logs",
+      "text": "日志2",
+      "iconPath": "images/chat-blue.png",
+      "selectedIconPath": "images/chat-blue.png"
+    }]
+  }
+}
