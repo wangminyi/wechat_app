@@ -4,14 +4,14 @@
   width: 100%;
   top: 0;
   text-align: center;
-  padding-top: 20px;
+  padding-top: 20rpx;
 }
 
 .userinfo {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 20rpx;
 }
 
 .userinfo-avatar {
@@ -23,6 +23,9 @@
 
 .userinfo-nickname {
   color: #aaa;
+  background-color: red;
+  width: 750rpx;
+  text-align: center;
 }
 
 .usermotto {

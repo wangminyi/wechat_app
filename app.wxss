@@ -1,4 +1,6 @@
 /**app.wxss**/
+
+/** 1rpm = (width in px / 750) **/
 .container {
   height:100%;
   display: flex;
