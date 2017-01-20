@@ -1,4 +1,7 @@
 /**index.wxss**/
+
+@import "../../modules/custom_css/test.wxss";
+
 .loading {
   position: absolute;
   width: 100%;
@@ -19,15 +22,4 @@
   height: 128rpx;
   margin: 20rpx;
   border-radius: 50%;
-}
-
-.userinfo-nickname {
-  color: #aaa;
-  background-color: red;
-  width: 750rpx;
-  text-align: center;
-}
-
-.usermotto {
-  margin-top: 50px;
 }

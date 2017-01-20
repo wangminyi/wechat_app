@@ -2,7 +2,8 @@
   "pages":[
     "pages/index/index",
     "pages/logs/logs",
-    "pages/user_info/user_info"
+    "pages/user_info/user_info",
+    "pages/widgets/widgets"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -19,6 +20,11 @@
     "list": [{
       "pagePath": "pages/index/index",
       "text": "首页",
+      "iconPath": "images/chat-blue.png",
+      "selectedIconPath": "images/chat-blue.png"
+    },{
+      "pagePath": "pages/widgets/widgets",
+      "text": "组件",
       "iconPath": "images/chat-blue.png",
       "selectedIconPath": "images/chat-blue.png"
     },{
