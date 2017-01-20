@@ -2,9 +2,13 @@ function _sum(a, b) {
     return a + b;
 }
 
-function _minus(a, b) {
-    return a - b;
+function array(from, to) {
+    var result = [];
+    for(var i = from; i <= to; i++){
+        result.push(i);
+    }
+    return result;
 }
 
 module.exports.sum = _sum
-module.exports.minus = _minus
+module.exports.array = array

@@ -9,13 +9,15 @@ Page({
     motto: 'Hello World',
     userInfo: {},
     value: 123,
-    years: [19, 20],
-    months: [21, 22],
-    days: [23, math.sum(23, 2)],
+    years: math.array(2010, 2020),
+    months: math.array(1, 12),
+    days: math.array(1, 31),
     bgc: "#F7F7F7",
     condition: {
-      loading: false
-    }
+      loading: false,
+      season: ""
+    },
+    template_name: "iam-template"
   },
   custom_data: {
     init_bgc: "#F7F7F7"
@@ -24,6 +26,11 @@ Page({
   bindViewTap: function() {
     wx.navigateTo({
       url: '../user_info/user_info'
+    })
+  },
+  change_date: function(e){
+    this.setData({
+      "condition.season": Math.ceil(e.detail.value[1] / 3)
     })
   },
   onLoad: function () {
@@ -54,7 +61,7 @@ Page({
   },
   onReachBottom: function(){
     this.setData({
-      bgc: "green"
+      bgc: "gray"
     });
   },
   onShareAppMessage: function(){
